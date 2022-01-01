@@ -34,7 +34,7 @@
     <div id="root">
       <img src="android-chrome-192x192.png"/>
       <br/><br/>
-      (1.6) a portfolio will live here someday.
+      (1.7) a portfolio will live here someday.
       <br/><br/>
       the end.
       <br/><br/>
@@ -45,25 +45,17 @@
       const printTimeout = (e) => {
         e.preventDefault();
         let print = setTimeout(() => {
-          alert('touchstart');
           document.location.href = 'https://brad-hartwig.github.io/portfolio/resume_save_pdf.html';
         }, 1000);
-        // btn.addEventListener('mouseup', () => {
-        //   console.log('heynow');
-        //   clearTimeout(print);
-        //   document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume.html';
-        // });
 
         ['mouseup', 'ontouchend'].forEach(evt => {
           this.addEventListener(evt, () => {
-            alert('touchend');
             clearTimeout(print);
             document.location.href = 'https://brad-hartwig.github.io/portfolio/resume.html';
           }, false);
         });
       };
 
-      // onload
       ['mousedown', 'ontouchstart'].forEach(evt => {
         document.getElementById('printBtn').addEventListener(evt, printTimeout, false);
       });
