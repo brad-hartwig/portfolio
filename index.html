@@ -34,7 +34,7 @@
     <div id="root">
       <img src="android-chrome-192x192.png"/>
       <br/><br/>
-      (1.4) a portfolio will live here someday.
+      (1.5) a portfolio will live here someday.
       <br/><br/>
       the end.
       <br/><br/>
@@ -46,7 +46,7 @@
         e.preventDefault();
         let print = setTimeout(() => {
           alert('touchstart');
-          document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume_save_pdf.html';
+          document.location.href = 'resume_save_pdf.html';
         }, 1000);
         // btn.addEventListener('mouseup', () => {
         //   console.log('heynow');
@@ -58,7 +58,7 @@
           this.addEventListener(evt, () => {
             alert('touchend');
             clearTimeout(print);
-            document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume.html';
+            document.location.href = 'resume.html';
           }, false);
         });
       };
