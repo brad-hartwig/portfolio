@@ -38,8 +38,25 @@
       <br/><br/>
       the end.
       <br/><br/>
-      <span><button style="display: inline;" onmousedown="printTimeout(this);" ontouchstart="printTimeout(this);">Resume</button></span>
+      <span><button id="printBtn">Resume</button></span>
     </div>
-    <script src="resume.js"></script>
+    <script>
+      const printTimeout = () => {
+        let print = setTimeout(() => {
+          document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume_save_pdf.html';
+        }, 1000);
+
+        ['mouseup', 'ontouchend'].forEach(evt => {
+          this.addEventListener(evt, () => {
+            clearTimeout(print);
+            document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume.html';
+          }, false);
+        });
+      };
+
+      ['mousedown', 'ontouchstart'].forEach(evt => {
+        document.getElementById('printBtn').addEventListener(evt, printTimeout, false);
+      });
+    </script>
   </body>
 </html>

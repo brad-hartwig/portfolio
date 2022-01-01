@@ -68,22 +68,3 @@ const build = () => {
     document.getElementById('duties').innerHTML = history.join('');
   });
 };
-
-const isMobile = ('ontouchstart' in document.documentElement);
-const printTimeout = (btn) => {
-  let print = setTimeout(() => {
-    document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume_save_pdf.html';
-  }, 1000);
-  if (isMobile){
-    btn.addEventListener('touchend', () => {
-      clearTimeout(print);
-      location.replace('file:///C:/Users/Brad/Desktop/projects/portfolio/resume.html');
-    });
-  }
-  else{
-    btn.addEventListener('mouseup', () => {
-      clearTimeout(print);
-      document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume.html';
-    });
-  }
-}
