@@ -34,17 +34,24 @@
     <div id="root">
       <img src="android-chrome-192x192.png"/>
       <br/><br/>
-      (1.1) a portfolio will live here someday.
+      (1.2) a portfolio will live here someday.
       <br/><br/>
       the end.
       <br/><br/>
+      <!-- <span><button style="display: inline;" ontouchstart="printTimeout(this);" onmousedown="printTimeout(this);">Resume</button></span> -->
       <span><button id="printBtn">Resume</button></span>
     </div>
     <script>
-      const printTimeout = () => {
+      const printTimeout = (e) => {
+        e.preventDefault();
         let print = setTimeout(() => {
           document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume_save_pdf.html';
         }, 1000);
+        // btn.addEventListener('mouseup', () => {
+        //   console.log('heynow');
+        //   clearTimeout(print);
+        //   document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume.html';
+        // });
 
         ['mouseup', 'ontouchend'].forEach(evt => {
           this.addEventListener(evt, () => {
@@ -54,6 +61,7 @@
         });
       };
 
+      // onload
       ['mousedown', 'ontouchstart'].forEach(evt => {
         document.getElementById('printBtn').addEventListener(evt, printTimeout, false);
       });
