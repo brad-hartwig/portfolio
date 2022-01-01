@@ -77,7 +77,7 @@ const printTimeout = (btn) => {
   if (isMobile){
     btn.addEventListener('touchend', () => {
       clearTimeout(print);
-      document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume.html';
+      location.replace('file:///C:/Users/Brad/Desktop/projects/portfolio/resume.html');
     });
   }
   else{
