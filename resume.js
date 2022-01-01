@@ -69,12 +69,21 @@ const build = () => {
   });
 };
 
+const isMobile = ('ontouchstart' in document.documentElement);
 const printTimeout = (btn) => {
   let print = setTimeout(() => {
     document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume_save_pdf.html';
   }, 1000);
-  btn.addEventListener('mouseup', () => {
-    clearTimeout(print);
-    document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume.html';
-  });
+  if (isMobile){
+    btn.addEventListener('touchend', () => {
+      clearTimeout(print);
+      document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume.html';
+    });
+  }
+  else{
+    btn.addEventListener('mouseup', () => {
+      clearTimeout(print);
+      document.location.href = 'file:///C:/Users/Brad/Desktop/projects/portfolio/resume.html';
+    });
+  }
 }
