@@ -5,7 +5,7 @@ const data = {
     'Detail-oriented Front End Web Developer brings strong commitment to collaboration and solutions-oriented problem-solving. Lending more than 20 years of expertise in Front End Web Development in fast-paced environments requiring fast turnaround. Committed to high standards of user experience and usability. Enthusiastic about learning and applying modern web methodologies.',
   history: [
     {
-      companyTitle: 'SGSco/Kwikee - Web Developer  •  Peoria, IL',
+      companyTitle: 'SGSco/Kwikee - Web Developer<br/>Peoria, IL',
       dates: '08/2016&ndash;06/2019',
       duties: [
         'Collaborated with Project Managers and clients to develop custom marketing solutions.',
@@ -16,7 +16,7 @@ const data = {
       ],
     },
     {
-      companyTitle: 'MultiAd - UI Developer  •  Peoria, IL',
+      companyTitle: 'MultiAd - UI Developer<br/>Peoria, IL',
       dates: '09/2011&ndash;08/2016',
       duties: [
         'Designed UIs within front-end web frameworks such as YUI3, exploiting their modules and implementing data tables, navigation, and color pickers.',
@@ -26,7 +26,7 @@ const data = {
       ],
     },
     {
-      companyTitle: 'MultiAd Services Inc. - Web Designer  •  Peoria, IL',
+      companyTitle: 'MultiAd Services Inc. - Web Designer<br/>Peoria, IL',
       dates: '09/1999&ndash;07/2011',
       duties: [
         'Designed and executed user interfaces, flowcharts, and wireframes.',
