@@ -1,5 +1,5 @@
 const data = {
-  skills: ['HTML', 'CSS/SCSS/SASS', 'JavaScript', 'React', 'JQuery', 'ES6', 'Bootstrap', 'Git', 'Microsoft Word', 'Excel', 'PowerPoint', 'Photoshop', 'Illustrator'],
+  skills: ['HTML', 'CSS/SCSS/SASS', 'JavaScript', 'JQuery', 'React', 'ES6', 'Bootstrap', 'Git', 'Excel', 'Photoshop', 'Illustrator'],
   softSkills: ['Effective Communication', 'Collaboration', 'Self Learning', 'Problem Solving', 'Multitasking', 'Adaptability'],
   summary:
     'Detail-oriented Front End Web Developer brings strong commitment to collaboration and solutions-oriented problem-solving. Lending more than 20 years of expertise in Front End Web Development in fast-paced environments requiring fast turnaround. Committed to high standards of user experience and usability. Enthusiastic about learning and applying modern web methodologies.',
@@ -41,14 +41,14 @@ const build = () => {
   // Skills
   let skills = [];
   data.skills.map(item => {
-    skills.push('<li>' + item + '</li>');
+    skills.push('<li class="list-group-item">' + item + '</li>');
   });
   document.getElementById('skills').innerHTML = skills.join('');
 
   // Soft Skills
   let softSkills = [];
   data.softSkills.map(item => {
-    softSkills.push('<li>' + item + '</li>');
+    softSkills.push('<li class="list-group-item">' + item + '</li>');
   });
   document.getElementById('soft-skills').innerHTML = softSkills.join('');
 
@@ -59,7 +59,7 @@ const build = () => {
   let history = [],
     liArr = [];
   data.history.map(item => {
-    history.push('<p class="workplace">' + item.companyTitle + '<br/>' + item.dates + '</p>');
+    history.push('<p>' + item.companyTitle + '<br/>' + item.dates + '</p>');
     item.duties.map(dutiesItem => {
       liArr.push('<li>' + dutiesItem + '</li>');
     });

@@ -2,118 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Web site created using create-react-app" />
-    <!-- <link rel="apple-touch-icon" href="/apple-touch-icon192.png" /> -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <!-- <link rel="manifest" href="site.webmanifest" /> -->
     <title>Brad Hartwig Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-      *{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
-      .root{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      .badge{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #008b00;
-        width: 200px;
-        height: 200px;
-        border-radius: 200px;
-      }
-      .badge-text{
-        color: #fff;
-        font-size: 7rem ;
-        font-weight: bold;
-        margin-bottom: 0;
-      }
-      .msg{
-        font-size: .8rem;
-        margin-top: 10px;
-        text-align: center;
-      }
-
-
-      table {
-        width: 100%;
-        background-color: #fff;
-        font-size: 1rem;
-      }
-      a:link,
-      a:visited,
-      a:hover,
-      a:active {
-        text-decoration: none;
-      }
-      .top-left {
-        background-color: #f4d283;
-      }
-      .top-left li {
-        font-size: 0.8rem;
-      }
-      .top-left i {
-        font-size: 0.9rem;
-      }
-      .top-left ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-      .top-left li {
-        padding-bottom: 10px;
-      }
-      .top-left li:last-child {
-        padding-bottom: 0;
-      }
-      .top-right {
-        background-color: #fdf6e6;
-      }
-      .bot-left {
-        background-color: #fbedcd;
-      }
-      .bot-left li {
-        padding-bottom: 4px;
-      }
-      .bot-left #soft-skills {
-        border-top: 1px solid #000;
-        padding-top: 20px;
-      }
-      .col-1 {
-        padding: 20px;
-        width: 35%;
-        vertical-align: top;
-      }
-      .col-2 {
-        padding: 20px 40px;
-        width: 65%;
-        vertical-align: top;
-      }
-      .workplace {
-        font-weight: bold;
-      }
-      .bot-right p,
-      .bot-right ul {
-        font-size: 0.9rem;
-      }
-      @media screen and (min-width: 1200px){
-        .modal-dialog{
-          max-width: 1140px;
-        }
-      }
-      @media screen and (min-width: 1400px){
-        .modal-dialog{
-          max-width: 1140px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
   </head>
   <body>
     <div class="root">
@@ -137,57 +35,69 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <table>
-              <tr>
-                <td class="col-1 top-left">
+            <!-- resume begin -->
+            <div class="container my-info">
+              <div class="row">
+                <div class="col my-name">
                   <h1>BRAD<br />HARTWIG</h1>
+                </div>
+                <div class="col my-info-details">
                   <ul>
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:hartwig.brad@gmail.com">hartwig.brad@gmail.com</a></li>
-                    <li><i class="fas fa-phone"></i> (309) 210-3431</li>
-                    <li><i class="fas fa-map-marker"></i> Chillicothe, IL 61523</li>
-                    <li><i class="fab fa-github"></i> <a href="https://github.com/brad-hartwig" target="_blank">github.com/brad-hartwig</a></li>
-                    <li><i class="fab fa-linkedin-in"></i> <a href="https://linkedin.com/in/brad-hartwig-profile" target="_blank">linkedin.com/in/brad-hartwig-profile</a></li>
+                    <li><a href="mailto:hartwig.brad@gmail.com">hartwig.brad@gmail.com</a> <i class="fas fa-envelope"></i></li>
+                    <li>(309) 210-3431 <i class="fas fa-phone"></i></li>
+                    <li>Chillicothe, IL 61523 <i class="fas fa-map-marker"></i></li>
+                    <li><a href="https://github.com/brad-hartwig" target="_blank">github.com/brad-hartwig</a> <i class="fab fa-github"></i></li>
+                    <li><a href="https://linkedin.com/in/brad-hartwig-profile" target="_blank">linkedin.com/in/brad-hartwig-profile</a> <i class="fab fa-linkedin-in"></i></li>
                   </ul>
-                </td>
-                <td class="col-2 top-right">
+                </div>
+              </div>
+            </div>
+            <div class="container summary">
+              <div class="row">
+                <div class="col">
                   <h2>PROFESSIONAL SUMMARY</h2>
-                  <p id="summary">
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td class="col-1 bot-left">
+                  <p id="summary"></p>
+                </div>
+              </div>
+            </div>
+            <div class="container skills">
+              <div class="row">
+                <div class="col">
                   <h2>SKILLS</h2>
-                  <ul id="skills">
-                  </ul>
-                  <ul id="soft-skills">
-                  </ul>
+                  <ul id="skills" class="d-flex flex-wrap"></ul>
+                  <ul id="soft-skills" class="d-flex flex-wrap"></ul>
+                </div>
+              </div>
+            </div>
+            <div class="container work-history">
+              <div class="row">
+                <div class="col">
+                  <h2>WORK HISTORY</h2>
+                  <section id="duties"></section>
+                </div>
+              </div>
+            </div>
+            <div class="container education">
+              <div class="row">
+                <div class="col">
                   <h2>EDUCATION</h2>
                   <p>
                     Limestone High School<br/>
                     Bartonville, IL<br/>
                     High School Diploma
                   </p>
-                </td>
-                <td class="col-2 bot-right">
-                  <h2>WORK HISTORY</h2>
-                  <section id="duties">
-                  </section>
-                </td>
-              </tr>
-            </table>
+                </div>
+              </div>
+            </div>
+            <!-- resume end -->
           </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
         </div>
       </div>
     </div>
 
     <script src="https://use.fontawesome.com/0a93e75e88.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="resume.js"></script>
+    <script src="js/resume.js"></script>
     <script>
       build();
 
@@ -197,17 +107,12 @@
           document.location.href = 'https://brad-hartwig.github.io/portfolio/resume_save_pdf.html';
         }, 1000);
 
-        ['mouseup', 'ontouchend'].forEach(evt => {
-          this.addEventListener(evt, () => {
-            clearTimeout(print);
-            // document.location.href = 'https://brad-hartwig.github.io/portfolio/resume.html';
-          }, false);
-        });
+        this.addEventListener('mouseup', () => {
+          clearTimeout(print);
+        }, false);
       };
 
-      ['mousedown', 'ontouchstart'].forEach(evt => {
-        document.getElementById('badge').addEventListener(evt, printTimeout, false);
-      });
+      document.getElementById('badge').addEventListener('mousedown', printTimeout, false);
     </script>
   </body>
 </html>

@@ -1,0 +1,97 @@
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.badge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #008b00;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  cursor: default;
+}
+.badge-text{
+  color: #fff;
+  font-size: 7rem ;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.msg{
+  font-size: .8rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container .col{
+  padding: 2rem;
+}
+.container ul{
+  padding-left: 0;
+}
+.container .list-group-item{
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid #333;
+  padding: 0 0.8rem;
+  margin-bottom: 0.2rem;
+}
+.container .list-group-item:last-child{
+  border-right: none;
+}
+.my-info{
+  background-color: #f4d283;
+}
+.my-info .my-name{
+  padding-right: .2rem;
+}
+.my-info .my-info-details{
+  text-align: right;
+  padding-left: .2rem;
+}
+.my-info .my-info-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.summary{
+  background-color: #fdf6e6;
+}
+.skills{
+  background-color: #fbedcd;
+}
+.work-history ul{
+  margin-left: 1.2rem;
+}
+.work-history p{
+  font-weight: bold;
+}
+.education{
+  background-color: #fbedcd;
+}
+.education p{
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px){
+  .modal-dialog{
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px){
+  .modal-dialog{
+    max-width: 1140px;
+  }
+}

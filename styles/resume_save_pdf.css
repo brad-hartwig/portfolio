@@ -1,0 +1,73 @@
+html {
+  background-color: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+body, .page {
+  width: 8.5in;
+  height: 11in;
+  background-color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+}
+table {
+  height: 100%;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.top-left {
+  background-color: #f4d283;
+}
+.top-left li {
+  font-size: 0.8rem;
+}
+.top-left i {
+  font-size: 0.9rem;
+}
+.top-left ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.top-left li {
+  padding-bottom: 10px;
+}
+.top-left li:last-child {
+  padding-bottom: 0;
+}
+.top-right {
+  background-color: #fdf6e6;
+}
+.bot-left {
+  background-color: #fbedcd;
+}
+.bot-left li {
+  padding-bottom: 4px;
+}
+.bot-left #soft-skills {
+  border-top: 1px solid #000;
+  padding-top: 20px;
+}
+.col-1 {
+  padding: 20px;
+  width: 35%;
+  vertical-align: top;
+}
+.col-2 {
+  padding: 20px 40px;
+  width: 65%;
+  vertical-align: top;
+}
+.workplace {
+  font-weight: bold;
+}
+.bot-right p,
+.bot-right ul {
+  font-size: 0.9rem;
+}
