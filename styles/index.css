@@ -35,9 +35,11 @@ a:active {
   text-align: center;
 }
 
-
+.container{
+  padding: 2.75rem;
+}
 .container .col{
-  padding: 2rem;
+  padding: 0;
 }
 .container ul{
   padding-left: 0;
@@ -54,10 +56,6 @@ a:active {
 }
 .my-info{
   background-color: #f4d283;
-  padding: 2.75rem;
-}
-.my-info .col{
-  padding: 0;
 }
 .my-info .my-name{
   padding-right: .3rem;
@@ -76,6 +74,9 @@ a:active {
 }
 .summary{
   background-color: #fdf6e6;
+}
+.summary p{
+  margin-bottom: 0;
 }
 .skills{
   background-color: #fbedcd;
