@@ -23,7 +23,7 @@
         </div>
         <p class="msg">a portfolio will live here someday.</p>
         <p class="msg">the end.</p>
-        <p class="msg"><button id="printBtn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resumeModal">View Resum&#233;</button></p>
+        <p class="msg"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resumeModal">View Resum&#233;</button></p>
       </div>
     </div>
 
@@ -101,18 +101,18 @@
     <script>
       build();
 
-      const printTimeout = (e) => {
+      const pdfTimeout = (e) => {
         e.preventDefault();
-        let print = setTimeout(() => {
+        let pdf = setTimeout(() => {
           document.location.href = 'https://brad-hartwig.github.io/portfolio/resume_save_pdf.html';
         }, 1000);
 
         this.addEventListener('mouseup', () => {
-          clearTimeout(print);
+          clearTimeout(pdf);
         }, false);
       };
 
-      document.getElementById('badge').addEventListener('mousedown', printTimeout, false);
+      document.getElementById('badge').addEventListener('mousedown', pdfTimeout, false);
     </script>
   </body>
 </html>
