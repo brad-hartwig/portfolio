@@ -56,6 +56,9 @@ h1, h2{
 .summary {
   background-color: #fdf6e6;
 }
+.summary p{
+  line-height: 1.4rem;
+}
 .skills {
   background-color: #fbedcd;
 }
