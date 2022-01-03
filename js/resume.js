@@ -6,7 +6,7 @@ const data = {
   history: [
     {
       companyTitle: '<span>SGSco/Kwikee - Web Developer</span><br/>Peoria, IL',
-      dates: '08/2016 &ndash; 06/2019',
+      dates: '08/2016 &ndash; 06/2020',
       duties: [
         'Collaborated with Project Managers and clients to develop custom marketing solutions.',
         'Front-end development using HTML, CSS, SCSS, JavaScript, jQuery and Bootstrap.',
