@@ -7,7 +7,7 @@ body {
   width: 8.5in;
   height: 11in;
   background-color: #fff;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 1rem;
   /* background-color: tomato; */
 }
@@ -26,6 +26,7 @@ a:active {
 }
 h1, h2{
   margin-top: 0;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 .col-1 {
   width: 35%;
@@ -57,7 +58,8 @@ h1, h2{
   background-color: #fdf6e6;
 }
 .summary p{
-  line-height: 1.4rem;
+  line-height: 1.6rem;
+  margin-bottom: 0;
 }
 .skills {
   background-color: #fbedcd;
@@ -78,6 +80,8 @@ h1, h2{
   padding-top: 20px;
 }
 #duties p span {
+  display: inline-block;
+  margin-right: 10px;
   font-weight: bold;
 }
 .history section{
@@ -87,7 +91,7 @@ h1, h2{
   padding-left: 20px;
 }
 .history li{
-  padding-bottom: 4px;
+  padding-bottom: 7px;
 }
 .education{
   margin-top: 20px;

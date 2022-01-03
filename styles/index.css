@@ -85,6 +85,8 @@ a:active {
   margin-left: 1.2rem;
 }
 .work-history p span{
+  display: inline-block;
+  margin-right: 10px;
   font-weight: bold;
 }
 .education{
