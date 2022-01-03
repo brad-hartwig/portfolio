@@ -6,7 +6,7 @@ const data = {
   history: [
     {
       companyTitle: '<span>SGSco/Kwikee - Web Developer</span><br/>Peoria, IL',
-      dates: '08/2016&ndash;06/2019',
+      dates: '08/2016 &ndash; 06/2019',
       duties: [
         'Collaborated with Project Managers and clients to develop custom marketing solutions.',
         'Front-end development using HTML, CSS, SCSS, JavaScript, jQuery and Bootstrap.',
@@ -17,7 +17,7 @@ const data = {
     },
     {
       companyTitle: '<span>MultiAd - UI Developer</span><br/>Peoria, IL',
-      dates: '09/2011&ndash;08/2016',
+      dates: '09/2011 &ndash; 08/2016',
       duties: [
         'Designed UIs within front-end web frameworks such as YUI3, exploiting their modules and implementing data tables, navigation, and color pickers.',
         'Worked closely with back-end developers to expedite display of server-based data.',
@@ -27,7 +27,7 @@ const data = {
     },
     {
       companyTitle: '<span>MultiAd Services Inc. - Web Designer</span><br/>Peoria, IL',
-      dates: '09/1999&ndash;07/2011',
+      dates: '09/1999 &ndash; 07/2011',
       duties: [
         'Designed and executed user interfaces, flowcharts, and wireframes.',
         'Created, maintained, and updated all front end aspects of website including HTML, CSS, JavaScript, image editing, form creation/validation, and copywriting.',
