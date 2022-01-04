@@ -1,5 +1,7 @@
-*{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body{
+  font-family: "Calibri", "Helvetica", "Arial", sans-serif;
+  font-size: 1.1rem;
+  font-size-adjust: 0.46;
 }
 a:link,
 a:visited,
@@ -8,12 +10,13 @@ a:active {
   text-decoration: none;
 }
 .root{
-  display: flex;
+  display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.badge{
+.bh-badge{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,19 +25,14 @@ a:active {
   height: 200px;
   border-radius: 200px;
   cursor: default;
+  margin-bottom: 1rem;
 }
-.badge-text{
+.bh-badge-text{
   color: #fff;
   font-size: 7rem ;
   font-weight: bold;
   margin-bottom: 0;
 }
-.msg{
-  font-size: .8rem;
-  margin-top: 10px;
-  text-align: center;
-}
-
 .container{
   padding: 2.75rem;
 }

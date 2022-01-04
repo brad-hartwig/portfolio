@@ -15,14 +15,14 @@
   </head>
   <body>
     <div class="root">
-      <div class="content">
-        <div id="badge" class="badge">
-          <p class="badge-text">BH</p>
+      <!-- <div class="content"> -->
+        <div id="bh-badge" class="bh-badge">
+          <p class="bh-badge-text">BH</p>
         </div>
         <p class="msg">a portfolio will live here someday.</p>
         <p class="msg">the end.</p>
         <p class="msg"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#resumeModal">View Resum&#233;</button></p>
-      </div>
+      <!-- </div> -->
     </div>
 
     <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -110,7 +110,7 @@
         }, false);
       };
 
-      document.getElementById('badge').addEventListener('mousedown', pdfTimeout, false);
+      document.getElementById('bh-badge').addEventListener('mousedown', pdfTimeout, false);
     </script>
   </body>
 </html>
