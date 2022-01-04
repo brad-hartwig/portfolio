@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Calibri", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  font-size-adjust: 0.46;
   /* background-color: thistle; */
 }
 .page {
   width: 8.5in;
   height: 11in;
-  background-color: #fff;
-  font-family: Arial, sans-serif;
-  font-size: 1rem;
   /* background-color: tomato; */
 }
 table {
@@ -25,12 +25,17 @@ a:active {
   text-decoration: none;
 }
 h1, h2{
-  margin-top: 0;
-  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  margin: 0;
+  margin-bottom: 10px;
+}
+p{
+  margin: 0;
 }
 .col-1 {
   width: 35%;
   vertical-align: top;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .col-2 {
   width: 65%;
@@ -43,10 +48,10 @@ h1, h2{
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-size: 0.9rem;
 }
 .my-info li {
-  font-size: 0.8rem;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 .my-info li:last-child {
   padding-bottom: 0;
@@ -62,6 +67,7 @@ h1, h2{
   margin-bottom: 0;
 }
 .skills {
+  font-size: 1.1rem;
   background-color: #fbedcd;
 }
 .skills ul {
@@ -70,7 +76,7 @@ h1, h2{
   margin: 0;
 }
 .skills li {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 #skills{
   margin-bottom: 10px;
@@ -85,13 +91,13 @@ h1, h2{
   font-weight: bold;
 }
 .history section{
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .history ul {
   padding-left: 20px;
 }
 .history li{
-  padding-bottom: 7px;
+  padding-bottom: 2px;
 }
 .education{
   margin-top: 20px;
